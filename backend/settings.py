@@ -100,7 +100,7 @@ INSTALLED_APPS = [
 
 ]
 
-CSRF_TRUSTED_ORIGINS = ['haveblueapiuat.azurewebsites.net']
+
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -111,7 +111,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
+    
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -134,6 +134,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000']
+
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
@@ -147,10 +149,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'HaveBlueDevDB',
-        'HOST': 'haveblueprod.postgres.database.azure.com',
-        'USER': 'HaveBlueDBAdmin@haveblueprod',
-        'PASSWORD': 'HaveBlueP4ss!',
+        'NAME': 'haveblueuatdb',
+        'HOST': 'flexibleportolaprod.postgres.database.azure.com',
+        'USER': 'portolaprodFleixble',
+        'PASSWORD': 'Gesa@2023',
         "PORT": "5432",
         # 'OPTIONS': {'sslmode': 'require'},
     }

@@ -59,7 +59,7 @@ pyparsing==3.0.9
 python-barcode==0.13.1
 python-dateutil==2.8.2
 python-dotenv==1.0.0
-python-magic==0.4.27
+python-magic-bin==0.4.14
 pytz==2023.3.post1
 PyYAML==5.1
 recordclass==0.20

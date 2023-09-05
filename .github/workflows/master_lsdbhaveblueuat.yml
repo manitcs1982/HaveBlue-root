@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'Lsdbhaveblueuat'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_98B945BC326B4FAE8E205355DD4931F6 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7FE49CEDBF034E14B613818CC7D195F2 }}

@@ -39,7 +39,7 @@ DATA_UPLOAD_MAX_NUMBER_FIELDS = 100000
 SECRET_KEY = 'mw^rf)hvx45pnzyjlgg*lkux@k6h30iut5$7wp4!_@2*c$%+*('
 ENCRYPT_KEY = b'2faW0g61jp_0WdGqZbwo1iYWfoU1COCCULI0PDvsOpk='
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 LSDB_BUILD = os.environ.get('REACT_APP_LSDB_BUILD', 'DEVELOPMENT')
 # ALLOWED_HOSTS = ['*']

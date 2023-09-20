@@ -91,7 +91,7 @@ class TestSequenceDefinitionViewSet(LoggingMixin, viewsets.ModelViewSet):
             serializer_class=MockTravelerSerializer,
             )
     def mock_traveler(self, request, pk=None):
-        queryset = TestSequenceDefinitionSerializerFull.objects.get(id=pk)
+        queryset = TestSequenceDefinitionSerializer.objects.get(id=pk)
         self.context = {'request': request}
         serializer = self.serializer_class(queryset, many=False, context=self.context)
         # print(serializer.data)

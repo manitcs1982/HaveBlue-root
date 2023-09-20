@@ -88,10 +88,10 @@ class TestSequenceDefinitionViewSet(LoggingMixin, viewsets.ModelViewSet):
 
     @transaction.atomic
     @action(detail=True, methods=['get'],
-            serializer_class=MockTravelerSerializer,
+            serializer_class=TestSequenceDefinitionSerializer,
             )
     def mock_traveler(self, request, pk=None):
-        queryset = TestSequenceDefinitionSerializer.objects.get(id=pk)
+        queryset = TestSequenceDefinition.objects.get(id=pk)
         self.context = {'request': request}
         serializer = self.serializer_class(queryset, many=False, context=self.context)
         # print(serializer.data)

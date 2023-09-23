@@ -135,6 +135,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000']
+CORS_REPLACE_HTTPS_REFERER = True
 
 
 # Database
@@ -146,18 +147,30 @@ CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000']
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'haveblueuatdb',
+#         'HOST': 'flexibleportolaprod.postgres.database.azure.com',
+#         'USER': 'portolaprodFleixble',
+#         'PASSWORD': 'Gesa@2023',
+#         "PORT": "5432",
+#         # 'OPTIONS': {'sslmode': 'require'},
+#     }
+# }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'haveblueuatdb',
-        'HOST': 'flexibleportolaprod.postgres.database.azure.com',
-        'USER': 'portolaprodFleixble',
-        'PASSWORD': 'Gesa@2023',
+        'NAME': 'HaveBlueDevDB',
+        'HOST': 'haveblueprod.postgres.database.azure.com',
+        'USER': 'HaveBlueDBAdmin@haveblueprod',
+        'PASSWORD': 'HaveBlueP4ss!',
         "PORT": "5432",
         # 'OPTIONS': {'sslmode': 'require'},
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 

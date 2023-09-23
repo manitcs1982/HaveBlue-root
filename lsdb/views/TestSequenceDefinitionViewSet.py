@@ -12,7 +12,7 @@ from lsdb.models import ProcedureDefinition
 from lsdb.models import TestSequenceDefinition
 from lsdb.models import ProcedureExecutionOrder
 from lsdb.serializers import TestSequenceDefinitionSerializer
-from lsdb.serializers import MockTravelerSerializer
+from lsdb.serializers.TestSequenceDefinitionSerializer import MockTravelerSerializer
 from lsdb.serializers import DispositionCodeListSerializer
 from lsdb.permissions import ConfiguredPermission
 from lsdb.serializers.TestSequenceDefinitionSerializer import TestSequenceDefinitionSerializerFull
@@ -88,7 +88,7 @@ class TestSequenceDefinitionViewSet(LoggingMixin, viewsets.ModelViewSet):
 
     @transaction.atomic
     @action(detail=True, methods=['get'],
-            serializer_class=TestSequenceDefinitionSerializer,
+            serializer_class=MockTravelerSerializer,
             )
     def mock_traveler(self, request, pk=None):
         queryset = TestSequenceDefinition.objects.get(id=pk)

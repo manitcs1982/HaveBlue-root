@@ -147,30 +147,30 @@ CORS_REPLACE_HTTPS_REFERER = True
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'haveblueuatdb',
-#         'HOST': 'flexibleportolaprod.postgres.database.azure.com',
-#         'USER': 'portolaprodFleixble',
-#         'PASSWORD': 'Gesa@2023',
-#         "PORT": "5432",
-#         # 'OPTIONS': {'sslmode': 'require'},
-#     }
-# }
-
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'HaveBlueDevDB',
-        'HOST': 'haveblueprod.postgres.database.azure.com',
-        'USER': 'HaveBlueDBAdmin@haveblueprod',
-        'PASSWORD': 'HaveBlueP4ss!',
+        'NAME': 'haveblueuatdb',
+        'HOST': 'flexibleportolaprod.postgres.database.azure.com',
+        'USER': 'portolaprodFleixble',
+        'PASSWORD': 'Gesa@2023',
         "PORT": "5432",
         # 'OPTIONS': {'sslmode': 'require'},
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'HaveBlueDevDB',
+#         'HOST': 'haveblueprod.postgres.database.azure.com',
+#         'USER': 'HaveBlueDBAdmin@haveblueprod',
+#         'PASSWORD': 'HaveBlueP4ss!',
+#         "PORT": "5432",
+#         # 'OPTIONS': {'sslmode': 'require'},
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
